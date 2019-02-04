@@ -69,8 +69,7 @@ font-size: 36px;
 color: #515151;
 font-weight: 900;
 text-align: center;
-margin: 0 0 120px 0;
-    }
+}
 
 .product-title::after, .title_news::after {
     content: "";
@@ -79,6 +78,7 @@ margin: 0 0 120px 0;
     display: block;
     margin: o auto;
     margin-top: 30px;
+    margin-bottom: 92px;
 }    
 
 .nav-list {
