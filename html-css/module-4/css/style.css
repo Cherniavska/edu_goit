@@ -137,7 +137,7 @@ img {
     background-color: 7#fd9c7;
 } */
 
-.product-item :hover .product-name{
+.product-item :hover .product_item_info{
     background-color: #cfcfcf;
 }
 
@@ -153,8 +153,7 @@ img {
 }
 .news-title {
     font-family: "Open Sans";
-    font-weight: 600;
-    font-size: 18px;
+     font-size: 18px;
     margin-bottom: 30px;
 }
 .news-title::after{
