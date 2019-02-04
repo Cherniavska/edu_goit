@@ -105,6 +105,10 @@ color:white;
 background-color: #323232;
 }
 
+.product-item:hover .product_item_info{
+    background-color: #1abc9c;
+}
+
 .opacity {
     background-color: rgba( 255,255,255, .45);
     content: "uuu";
@@ -134,18 +138,6 @@ img {
     /* padding-right: 12px; */
 
 } 
-
-/* .product-name{
-    background-color: #cfcfcf;
-} */
-
-/* .price{
-    background-color: 7#fd9c7;
-} */
-
-.product-item :hover .product_item_info{
-    background-color: #cfcfcf;
-}
 
 .product {
     margin-bottom: 105px;
