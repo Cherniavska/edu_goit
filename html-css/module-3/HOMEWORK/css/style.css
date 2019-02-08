@@ -42,15 +42,6 @@ padding: inherit;
     
    }
 
-   .music {
-    font-size: 14px;
-    font-family: "PlayfairDisplay";
-    color: rgb(98, 98, 98);
-    text-transform: uppercase;
-    
-  }
-  
-
 .nav-list a:hover {
 color: #03a9f4;
 }
