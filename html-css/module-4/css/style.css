@@ -100,7 +100,6 @@ margin-bottom: 130px;
     margin-right: 0;
 }
 
-
 .product_item_info{
 width: 255px;
 height: 40px;
@@ -123,12 +122,6 @@ cursor: pointer;
 }
 
 
-/* .opacity {
-    background-color: rgba( 255,255,255, .45);
-    width: 54px;
-    height: 40px;
-    margin-left: 201px;
-} */
 .product-item {
     width: 255px;
     height: 322px;
@@ -159,9 +152,8 @@ cursor: pointer;
 .news-item {
     list-style: none;
     float: left;
-    margin: 0 30px 30px 0;
+    margin-right:30px;
     width: 350px;
-    padding-bottom: 35px;
 }
 
 .news-item:last-child{
@@ -216,7 +208,8 @@ cursor: pointer;
 
 .news-item:hover{
     cursor: pointer;
-    -webkit-box-shadow: 4px 5px 5px 0px rgba(26,188,156,1);
-    -moz-box-shadow: 4px 5px 5px 0px rgba(26,188,156,1);
-    box-shadow: 4px 5px 5px 0px rgba(26,188,156,1);
+
+}
+.news {
+    padding-bottom: 40px;
 }
