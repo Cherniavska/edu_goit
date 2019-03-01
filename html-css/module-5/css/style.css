@@ -108,12 +108,12 @@ img {
               }
 
 .prev {
-    background-image: url(../img/prev.jpg)
+    background-image: url(../img/prev.jpg);
     left: 245px;
   }      
 
 .next {
-    background-image: url(../img/next.jpg)
+    background-image: url(../img/next.jpg);
     right: 245px;
  }
 
