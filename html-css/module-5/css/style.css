@@ -99,23 +99,21 @@ img {
 
 .slider-ctrl {
     display: inline-block;
-        background-color: rgb(26, 188, 156);
-        border: none;
+        border: 1px solid #1abc9c;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         width: 104px;
         height: 104px;
-        color: rgb(250, 250, 250);
-        font-size: 48px;
-    
-       }
+              }
 
 .prev {
+    background-image: url(../img/prev.jpg);
     left: 245px;
   }      
 
 .next {
+    background-image: url(../img/next.jpg);
     right: 245px;
  }
 
