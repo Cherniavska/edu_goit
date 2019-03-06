@@ -28,7 +28,6 @@ img {
 .container {
     width:1100px;
     margin: 0 auto;
-
 }
 
 .clearfix::after {
@@ -37,11 +36,10 @@ img {
     clear: both;
 }
 
-.header{
+.header {
     height: 90px;
     margin: 0 auto;
-
-}
+  }
 
 .logo {
     float:left;
@@ -51,8 +49,7 @@ img {
     font-size: 28px;
     font-weight: 300;
     text-indent: 22px;
-    padding-top: 30px;
-  
+    padding-top: 25px;
 }
 
 
@@ -63,8 +60,7 @@ img {
 
 .nav-menu{
     float: right;
-    padding-top: 40px;
-  
+    padding-top:40px;
 }
 
 .menu-item {
@@ -82,6 +78,7 @@ img {
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
+    text-transform: uppercase;
     color: #110000;
 }
 
@@ -92,7 +89,6 @@ img {
 .slider{
     width: 1600px;
     margin: auto;
-    margin-bottom: 100px;
     position: relative;
 
 }
@@ -151,14 +147,20 @@ img {
 
  }
 
-.product{
-    font-family: var(--product-font);
-    }
+.products {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
 
 .product-title {
     text-align: center;
     margin-bottom: 120px;
-    }
+    font-family: "Roboto";
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #515151;
+}
 
 .product-title::after{
     content: "";
@@ -169,7 +171,10 @@ img {
     margin-top: 30px;
 } 
 
-   
+.section-services-title {
+    text-align: center;
+}
+ 
 
 .product-item {
     list-style: none;
@@ -295,11 +300,8 @@ img {
         .product-item:hover .price{
             background-color: #7fd9c7;
             cursor: pointer;
-        }        
-.products {
-    margin-bottom: 100px;
+}        
 
-}
 .footer {
 height: 80px;
 color:#ffffff;
@@ -307,7 +309,8 @@ font-family: var(--product-font);
 font-weight: 300;
 text-align: center;
 padding-top: 35px;
-}        
+}       
+
 .colortext {
     color: #46bfa9;
 }
