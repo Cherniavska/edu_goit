@@ -69,6 +69,8 @@ img {
     margin: 0 auto;
     margin-top: 12px;     
     opacity: 0;
+    transition-delay: 0.3s;
+    transition-duration: 0.8s;
 }
 
 .nav-item:hover  .nav-link{
@@ -133,16 +135,15 @@ img {
 }
 
 .service-descrip {
-    padding-left: 82px;
-}
-
-.service-descrip {
     margin-bottom: 20px;
     font-family: var(--main-font);
     color: #333333;
     text-transform: uppercase;
     font-size: 14px;
+    padding-left: 82px;
 }
+
+
 
 .service-descrip-text {
     font-family: var(--main-font);
@@ -176,22 +177,94 @@ img {
 
     .team-item {
         list-style: none;
-        width: 380px;    
+        width: 380px;
+        position: relative;  
+        padding-bottom: 27px;
     }
 
-    
-    .team-item-link {
-        text-decoration: none;
-      }
 
-    .team-item-link img {
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 380px;
+        height: 470px;
+        background-image: linear-gradient(to bottom left, rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+        -moz-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+        box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+        opacity: 0;
+        transition-delay: 0.1s;
+        transition-duration: 1s;
+        transform: translateX(-10px);
+        transform: translateY(-10px);
+
+    }
+      
+    .team-item:hover .overlay{
+        opacity: 1;
+        cursor: pointer;
+       
+    }
+
+    .team-item:hover .team-item-photo {
+        transform: translateX(-10px);
+        transform: translateY(-10px);
+        /* transition-delay: 0.2s; */
+        transition-duration: .5s;
+
+    }
+
+
+    .social-icon {
+        display: inline-block;
+        float: left;
+        list-style: none;
+        width: 55px;
+        height:55px;
+        background-color:  #fce38a;
+        border: 0.3px solid #f9bd87;
+        background-repeat: no-repeat;
+        background-position: center;
+       
+    }
+
+    .facebook {
+        background-image: url(../img/4_facebook.png)
+    }
+
+    .twitter {
+        background-image: url(../img/5_twitter.png)
+    }
+
+    .pinterest {
+        background-image: url(../img/6_pinterest.png)
+    }
+
+    .insta {
+        background-image: url(../img/7_instagram.png)
+    }
+
+    .social-icon:hover,
+    .social-icon:focus {
+        background-color: #95e1d3;
+        cursor: pointer;
+        transition-delay: 0.2s;
+        transition-duration: 1s;
+
+    }
+           
+    .team-item-photo {
         margin-bottom: 27px;
     }
 
     .team-list {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 82px;
+        margin-bottom: 55px;
     }
 
     .employee {
@@ -246,7 +319,8 @@ img {
     }
 
     .button {
-    /* display: none; */
+    box-shadow: none;
+    border:none;
     background-color: rgb(149, 225, 211);
     width: 150px;
     height: 40px;
