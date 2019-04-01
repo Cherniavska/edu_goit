@@ -1,0 +1,136 @@
+@import "./vars.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+.container {
+ width: 940px;
+ margin: 0 auto;
+}
+
+.header {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: "Dancing Script";
+    font-size: 36px;
+    color:#fed136;
+}
+
+.nav_menu_list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 485px;
+    list-style: none;
+}
+
+.nav_link {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #222222;
+    text-transform: uppercase;
+    /* transition-delay: 0.1s; */
+    transition-duration: 0.4s;
+}
+
+.nav_menu_item:hover .nav_link {
+    color: #fed136;
+    cursor: pointer;
+   
+}
+
+.section_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 900;
+    color: #222222;
+    margin-bottom: 20px; 
+}
+
+.section_add_info {
+    text-align: center;
+    font-family: "Roboto Slab";
+    margin-bottom: 80px;
+}
+
+.services_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sevices_item::before {
+    display: block;
+    content: " ";
+    height: 74px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-basket::before {
+    background-image: url(../img/Icon-Basket.png);
+}
+
+.icon-laptop::before {
+    background-image: url(../img/Icon-Laptop.png);
+}
+
+.icon-locked::before {
+    background-image: url(../img/Icon-Locked.png);
+}
+
+.sevice_item_title {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.sevice_item_info {
+    text-align: center;
+}
+
+.services {
+    padding-bottom: 120px;
+}
+
+.dark_wrapper {
+    width: 100vw;
+    background-color: #222222;
+    background-image: url(../img/Map\ Image.jpg);
+}
+
+.contact_us {
+    min-height: 470px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+
+.title_contact_us {
+    color: #ffffff;
+}
+
+.form {
+
+}
