@@ -70,8 +70,7 @@ let message;
 input = prompt("Введите пароль!");
 
 while (input !== null) {
-  let quantityOfAttempts = n - 1;
-  n = quantityOfAttempts;
+  n--;
 
   if (passwords.includes(input) === true) {
     alert("Добро пожаловать!");
