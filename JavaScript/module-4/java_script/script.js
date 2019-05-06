@@ -20,28 +20,19 @@ const notepad = {
   },
   saveNote(note) {
     this.notes.push(note);
+    return note;
   },
-  deleteNote(id) {
-    const note = this.findNoteById(id);
-    let i = this.notes.indexOf(note);
 
-    this.notes.splice(i, 1);
-  },
   updateNoteContent(id, updatedContent) {
     let note = this.findNoteById(id);
-    if (note.id === id) {
-      let i = this.notes.indexOf(note);
-      this.notes.splice(i, 1);
-      note = { ...note, ...updatedContent };
-    }
-    this.saveNote(note);
+    let i = this.notes.indexOf(note);
+    this.notes[i] = { ...note, ...updatedContent };
+    return this.notes[i];
   },
   updateNotePriority(id, priority) {
     const note = this.findNoteById(id);
-    if (note.id === id) {
-      note.priority = priority;
-      return;
-    }
+    note.priority = priority;
+    return note;
   },
   filterNotesByQuery(query) {
     const NotesByQuery = [];
@@ -69,6 +60,13 @@ const notepad = {
       }
     }
     return filteredNotes;
+  },
+  deleteNote(id) {
+    const note = this.findNoteById(id);
+    let i = this.notes.indexOf(note);
+
+    this.notes.splice(i, 1);
+    return this.notes;
   }
 };
 
