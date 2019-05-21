@@ -6,6 +6,8 @@ const Priority = {
   HIGH: 2
 };
 const notepad = {
+};
+
   notes: [],
   getNotes() {
     return this.notes;
@@ -68,8 +70,6 @@ const notepad = {
     this.notes.splice(i, 1);
     return this.notes;
   }
-};
-
 /*
  * Добавляю 4 заметки и смотрю что получилось
  */
