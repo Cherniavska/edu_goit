@@ -91,9 +91,6 @@ const notepad = new Notepad(initialNotes);
 
 console.log("Все текущие заметки: ", notepad.getNotes());
 
-/*
- * Добавляю еще 2 заметки и смотрю что получилось
- */
 notepad.saveNote({
   id: "id-3",
   title: "Get comfy with Frontend frameworks",
@@ -112,9 +109,6 @@ notepad.saveNote({
 
 console.log("Все текущие заметки: ", notepad.getNotes());
 
-/*
- * Зима уже близко, пора поднять приоритет на покупку одежды
- */
 notepad.updateNotePriority("id-4", Notepad.Priority.NORMAL);
 
 console.log(
@@ -122,9 +116,6 @@ console.log(
   notepad.getNotes()
 );
 
-/*
- * Решил что фреймворки отложу немного, понижаю приоритет
- */
 notepad.updateNotePriority("id-3", Notepad.Priority.LOW);
 
 console.log(
@@ -132,33 +123,21 @@ console.log(
   notepad.getNotes()
 );
 
-/*
- * Решил отфильтровать заметки по слову html
- */
 console.log(
   'Отфильтровали заметки по ключевому слову "html": ',
   notepad.filterNotesByQuery("html")
 );
 
-/*
- * Решил отфильтровать заметки по слову javascript
- */
 console.log(
   'Отфильтровали заметки по ключевому слову "javascript": ',
   notepad.filterNotesByQuery("javascript")
 );
 
-/*
- * Хочу посмотреть только заметки с нормальным приоритетом
- */
 console.log(
   "Отфильтровали заметки по нормальному приоритету: ",
   notepad.filterNotesByPriority(Notepad.Priority.NORMAL)
 );
 
-/*
- * Обновим контент заметки с id-3
- */
 notepad.updateNoteContent("id-3", {
   title: "Get comfy with React.js or Vue.js"
 });
@@ -168,8 +147,5 @@ console.log(
   notepad.getNotes()
 );
 
-/*
- * Повторил HTML и CSS, удаляю запись c id-2
- */
 notepad.deleteNote("id-2");
 console.log("Заметки после удаления с id -2: ", notepad.getNotes());
